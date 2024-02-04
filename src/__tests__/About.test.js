@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import About from "../components/About";
 import logo from "../assets/logo"
 
+
 test("renders a <aside> element", () => {
   const { container } = render(<About />);
   expect(container.querySelector("aside")).toBeInTheDocument();
